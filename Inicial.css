@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 /*Corpo*/
 body {
@@ -12,14 +13,14 @@ body {
     background-color:white;
     height: 200px;
 }
-#Cabeçalho {
+#Container {
     background-color: #800000;
     height: 40px;
 }
 /*Escritos*/
 .Título {
     color:black;
-    font: normal 80px Arial;
+    font: normal 60px Arial;
     text-align: center;
 }
 p{
@@ -47,12 +48,28 @@ a:active{
     color: black;
     text-decoration: none;
 }
+/*Inputs*/
+#Buscar {
+    height: 40px;
+    width: 500px;
+    position: relative;
+    top: 20px;
+}
 /*Imagens*/
 #IconeMenu {
     max-width: 200px;
     max-height: 150px;
     width: auto;
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 50px;
+}
+#IconeInsta {
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 5px;
+    right: 200px;
 }
