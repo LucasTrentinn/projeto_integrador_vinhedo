@@ -1,32 +1,78 @@
 /*Tudo*/
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
-/*Corpo*/
-body {
-    background-color: black;
+
+
+/*Header*/
+#Cabeçalho {
+    background-color: #800000;
+    height: 40px; 
 }
 
 #MenuSup {
     background-color:white;
     height: 200px;
 }
-#Container {
-    background-color: #800000;
-    height: 40px;
+
+#coluna1 {
+    height: 200px;
+    float: left;
+    width: 20%;
 }
+
+#coluna2 {
+    height: 200px;
+    float: left;
+    width: 60%;
+}
+
+#coluna3 {
+    height: 200px;
+    float: right;
+    width: 20%;
+}
+
+/*Corpo*/
+body {
+    background-color: white;
+}
+
+#Direita {
+    background-color: burlywood;
+    height: 600px;
+    float: right;
+    width: 40%;
+
+}
+
+#Esquerda {
+    background-color: #800000;
+    height: 600px;
+    float: left;
+    width: 60%;
+
+}
+
+#Rodapé {
+    background-color: black;
+    height: 200px;
+    clear: both;
+}
+
 /*Escritos*/
-.Título {
+#Título {
     color:black;
     font: normal 60px Arial;
     text-align: center;
 }
+
 p{
     color: black;
     font: normal 20px Arial;
 }
+
 /*Links*/
 a:link{
     color: black;
@@ -34,42 +80,47 @@ a:link{
     text-decoration: none;
     align-items: center;
     position: relative;
-    top: 50px;
 }
+
 a:visited{
     color: black;
     text-decoration: none;
 }
+
 a:hover{
     color: #800000;
     text-decoration: none;
 }
+
 a:active{
     color: black;
     text-decoration: none;
 }
-/*Inputs*/
-#Buscar {
-    height: 40px;
-    width: 500px;
+
+#link2 {
     position: relative;
-    top: 20px;
+    top: 80px;
 }
+
 /*Imagens*/
 #IconeMenu {
     max-width: 200px;
     max-height: 150px;
     width: auto;
     height: auto;
-    position: fixed;
-    top: 50px;
 }
+
 #IconeInsta {
-    max-width: 30px;
-    max-height: 30px;
-    width: auto;
-    height: auto;
-    position: fixed;
+    width: 30px;
+    height: 30px;
+    position: relative;
     top: 5px;
-    right: 200px;
+    left: 1200px;
 }
+
+/*Inputs*/
+#Buscar {
+    height: 40px;
+    width: 500px;
+}
+
