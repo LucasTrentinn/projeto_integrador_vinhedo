@@ -22,6 +22,8 @@
 
 .menu {
     grid-area: menu;
+    align-self: center;
+    justify-self: center;
 }
 
 .login {
@@ -82,6 +84,7 @@ a:link{
     color: black;
     font: normal 20px Arial;
     text-decoration: none;
+    position: relative;
 }
 
 a:visited{
