@@ -1,0 +1,48 @@
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.cabeçalho {
+    background-color: #800000;
+    height: 40px;
+    color: white;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+.menu {
+    background-color: white;
+    height: 200px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+/* Body */
+.corpoesquerda {
+    background-color: wheat;
+    height: 600px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+.corpodireita {
+    background-color: cornflowerblue;
+    height: 600px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+/* Footer */
+.rodape {
+    background-color: black;
+    height: 200px;
+    color: white;
+    font: solid 30px Arial;
+    text-align: center;
+}
