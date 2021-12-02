@@ -15,7 +15,7 @@
 
 .menu {
     background-color: white;
-    height: 200px;
+    height: 100px;
     color: black;
     font: solid 30px Arial;
     text-align: center;
@@ -30,6 +30,26 @@
     text-align: center;
 }
 
+.esquerda1 {
+    background-color: aqua;
+    height: 600px;
+}
+
+.esquerda2 {
+    background-color: greenyellow;
+    height: 600px;
+}
+
+.esquerda3 {
+    background-color: brown;
+    height: 600px;
+}
+
+.esquerda4 {
+    background-color: blueviolet;
+    height: 600px;
+}
+
 .corpodireita {
     background-color: cornflowerblue;
     height: 600px;
@@ -41,8 +61,9 @@
 /* Footer */
 .rodape {
     background-color: black;
-    height: 200px;
+    height: 100px;
     color: white;
     font: solid 30px Arial;
     text-align: center;
 }
+
