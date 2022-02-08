@@ -1,0 +1,37 @@
+{
+    "vinho": [{
+        "id": 1,
+        "nome": "Villa Matilde Cecubo 2014",
+        "volume": "750mL",
+        "teorAlcóolico": "13,5%",
+        "uva": 
+            "Primitivo e Piedirosso",
+        "safra": "2014",
+        "país": "Itália"
+    }, {
+        "id": 2,
+        "nome": "Las Falleras Blanco 2020",
+        "volume": "750mL",
+        "teorAlcóolico": "11%",
+        "uva": "Macabeo",
+        "safra": "2020",
+        "país": "Espanha"
+    }, {
+        "id": 3,
+        "nome": "El Madero Tempranillo",
+        "volume": "750mL",
+        "teorAlcóolico": "12%",
+        "uva": "Tempranillo",
+        "safra": "",
+        "país": "Espanha"
+    }, {
+        "id": 4,
+        "nome": "Punta Negra Wines of Belhara Malbec 2019",
+        "volume": "750mL",
+        "teorAlcóolico": "13,5%",
+        "uva": "Malbec",
+        "safra": "2019",
+        "país": "Argentina"
+    }
+    ]
+}

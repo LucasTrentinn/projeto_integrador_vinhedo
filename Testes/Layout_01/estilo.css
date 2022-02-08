@@ -1,0 +1,69 @@
+/* All */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.cabeçalho {
+    background-color: #800000;
+    height: 40px;
+    color: white;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+.menu {
+    background-color: white;
+    height: 100px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+/* Body */
+.corpoesquerda {
+    background-color: wheat;
+    height: 600px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+.esquerda1 {
+    background-color: aqua;
+    height: 600px;
+}
+
+.esquerda2 {
+    background-color: greenyellow;
+    height: 600px;
+}
+
+.esquerda3 {
+    background-color: brown;
+    height: 600px;
+}
+
+.esquerda4 {
+    background-color: blueviolet;
+    height: 600px;
+}
+
+.corpodireita {
+    background-color: cornflowerblue;
+    height: 600px;
+    color: black;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
+/* Footer */
+.rodape {
+    background-color: black;
+    height: 100px;
+    color: white;
+    font: solid 30px Arial;
+    text-align: center;
+}
+
