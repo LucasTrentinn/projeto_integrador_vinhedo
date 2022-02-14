@@ -4,8 +4,10 @@
         "nome": "Villa Matilde Cecubo 2014",
         "volume": "750mL",
         "teorAlcóolico": "13,5%",
-        "uva": 
-            "Primitivo e Piedirosso",
+        "uva": [
+            "Primitivo",
+            "Piedirosso"
+        ],
         "safra": "2014",
         "país": "Itália"
     }, {
@@ -48,14 +50,6 @@
         "uva": "Cabernet Sauvignon",
         "safra": "2020",
         "país": "França"
-    }, {
-        "id": 7,
-        "nome": "Doppio Passo Primitivo Puglia IGT 2020",
-        "volume": "750mL",
-        "teorAlcóolico": "13%",
-        "uva": "Primitivo",
-        "safra": "2020",
-        "país": "Itália"
     }, {
         "id": 7,
         "nome": "Doppio Passo Primitivo Puglia IGT 2020",
