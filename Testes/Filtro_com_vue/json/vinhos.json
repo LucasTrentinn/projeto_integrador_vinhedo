@@ -1,5 +1,4 @@
-{
-    "vinho": [{
+[{
         "id": 1,
         "nome": "Villa Matilde Cecubo 2014",
         "volume": "750mL",
@@ -67,5 +66,4 @@
         "safra": "2021",
         "país": "Chile"
     }
-    ]
-}
+]
