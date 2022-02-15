@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nome": "Villa Matilde Cecubo 2014",
+        "volume": "750mL",
+        "teorAlcóolico": "13,5%",
+        "uva": "Primitivo",
+        "safra": "2014",
+        "país": "Itália"
+    },
+    {
+        "id": 2,
+        "nome": "Las Falleras Blanco 2020",
+        "volume": "750mL",
+        "teorAlcóolico": "11%",
+        "uva": "Macabeo",
+        "safra": "2020",
+        "país": "Espanha"
+    },
+    {
+        "id": 3,
+        "nome": "El Madero Tempranillo",
+        "volume": "750mL",
+        "teorAlcóolico": "12%",
+        "uva": "Tempranillo",
+        "safra": "",
+        "país": "Espanha"
+    },
+    {
+        "id": 4,
+        "nome": "Punta Negra Wines of Belhara Malbec 2019",
+        "volume": "750mL",
+        "teorAlcóolico": "13,5%",
+        "uva": "Malbec",
+        "safra": "2019",
+        "país": "Argentina"
+    },
+    {
+        "id": 5,
+        "nome": "Chateau Garbin Malbec 2019",
+        "volume": "750mL",
+        "teorAlcóolico": "12,8%",
+        "uva": "Malbec",
+        "safra": "2019",
+        "país": "Argentina"
+    },
+    {
+        "id": 6,
+        "nome": "Divin Marquis Cabernet Sauvignon 2020",
+        "volume": "750mL",
+        "teorAlcóolico": "12%",
+        "uva": "Cabernet Sauvignon",
+        "safra": "2020",
+        "país": "França"
+    },
+    {
+        "id": 7,
+        "nome": "Doppio Passo Primitivo Puglia IGT 2020",
+        "volume": "750mL",
+        "teorAlcóolico": "13%",
+        "uva": "Primitivo",
+        "safra": "2020",
+        "país": "Itália"
+    },
+    {
+        "id": 8,
+        "nome": "Casa Pastene Merlot Central Valley D.O. 2021",
+        "volume": "750mL",
+        "teorAlcóolico": "12,5%",
+        "uva": "Merlot",
+        "safra": "2021",
+        "país": "Chile"
+    }
+]
