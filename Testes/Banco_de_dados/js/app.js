@@ -5,7 +5,7 @@ const App = {
             vinho: {
                 nome: '',
                 volume: '',
-                teorAlcóolico: '',
+                teorAlcoólico: '',
                 uva: '',
                 safra: '',
                 país: ''
@@ -18,8 +18,8 @@ const App = {
                 alert("Insira um nome válido.")
             } else if (this.vinho.volume == '') {
                 alert("Insira um volume válido.")
-            } else if (this.vinho.teorAlc == '') {
-                alert("Insira um teor alcóolico válido.")
+            } else if (this.vinho.teorAlcoólico == '') {
+                alert("Insira um teor alcoólico válido.")
             } else if (this.vinho.uva == '') {
                 alert("Insira um tipo de uva válido.")
             } else if (this.vinho.safra == '') {
@@ -37,7 +37,7 @@ const App = {
                     this.vinho = {
                         nome: '',
                         volume: '',
-                        teorAlc: '',
+                        teorAlcoólico: '',
                         uva: '',
                         safra: '',
                         pais: ''
