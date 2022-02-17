@@ -1,8 +1,41 @@
-#topo {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
     background-color: #180566;
-    height: 125px;
+    height: 100px;
     color: white;
 }
+
 #logo{
-    height: 110px;
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+}
+
+.campoPesquisa {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#campoPesquisa {
+    border-radius: 20px;
+    height: 45px;
+}
+
+.topo4 {
+    display: flex;
+    align-items: center;
+}
+
+a:after {
+    color: white;
+}
+
+a:hover {
+    color: white;
 }

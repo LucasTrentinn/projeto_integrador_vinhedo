@@ -1,27 +1,27 @@
 <template>
   <header>
-    <div class="container">
-  <div class="row">
-    <div id="topo" class="col navbar fixed-top ">
-      <a class="navbar-brand" href="#"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      Column
+    <div class="container-fluid">
+      <div class="row topo">
+        <div class="col-1">
+          <a class="navbar-brand" href="#"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></a>
+        </div>
+        <div class="col-5">
+        </div>
+        <div class="col-5 campoPesquisa">
+          <input type="text" placeholder="Busque por vinhos e outros usuários..." autocomplete="off" id="campoPesquisa" size="70" onfocus="this.value='';">
+        </div>
+        <div class="col-1 topo4">
+          <a href="#"> Fazer Login </a>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
   </header>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style>
