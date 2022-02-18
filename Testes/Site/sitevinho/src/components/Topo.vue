@@ -6,9 +6,9 @@
           <a class="navbar-brand" href="https://betteranime.net/" target="_blank"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></a>
         </div>
         <div id="menu" class="col-5">
-          <a href="#">Vinhos</a>
-          <a href="#">Sobre</a>
-          <a href="#">contato</a>
+          <a  href="#">Vinhos</a>
+          <a  href="#">Sobre</a>
+          <a  href="#">contato</a>
         </div>
         <div class="col-5 campoPesquisa">
           <input type="text" placeholder="Busque por vinhos e outros usuários..." autocomplete="off" id="campoPesquisa" size="70" onfocus="this.value='';">
@@ -56,6 +56,9 @@ export default {
 .topo4 {
     display: flex;
     align-items: center;
+}
+#menu {
+  text-align: center
 }
 
 
