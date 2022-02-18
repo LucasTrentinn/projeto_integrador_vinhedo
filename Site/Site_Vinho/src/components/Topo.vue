@@ -5,15 +5,19 @@
         <div class="col-1">
           <a class="navbar-brand" href="https://betteranime.net/" target="_blank"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></a>
         </div>
-        <div id="menu" class="col-5">
-          <a  href="#">Vinhos</a>
-          <a  href="#">Sobre</a>
-          <a  href="#">contato</a>
+        <div class="col-1">
         </div>
-        <div class="col-5 campoPesquisa">
-          <input type="text" placeholder="Busque por vinhos e outros usuários..." autocomplete="off" id="campoPesquisa" size="70" onfocus="this.value='';">
+        <div class="col-3 menu">
+          <a href="#">Vinhos</a> 
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+          </div>
+        <div class="col-2">
         </div>
-        <div class="col-1 topo4">
+        <div class="col-4 campoPesquisa">
+          <input type="text" placeholder="Busque por vinhos e outros usuários..." autocomplete="off" id="campoPesquisa" size="63" onfocus="this.value='';">
+        </div>
+        <div class="col-1 menu">
           <a href="#"> Fazer Login </a>
         </div>
       </div>
@@ -32,7 +36,6 @@ export default {
 .topo {
     background-color: #180566;
     height: 100px;
-    color: white;
 }
 
 #logo{
@@ -51,20 +54,31 @@ export default {
 #campoPesquisa {
     border-radius: 20px;
     height: 45px;
+    border: 1px solid #ccc;
+    background-image:  url('./imagens/lupa.png'); 
+    background-position: 10px, 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px
 }
 
-.topo4 {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-}
-#menu {
-  text-align: center;
-  font-size: 20px;
-  padding: 32px;
-  
+textarea:focus, input:focus, select:focus{
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font: 20px Georgia normal;
+  color: white;
+}
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
 
 
 </style>
