@@ -1,6 +1,7 @@
 <template>
 <div>
  <topo />
+  <router-view />
  <rodape />
 </div>
 </template>
