@@ -1,41 +1,84 @@
 <template>
-    <div class="container-fluid rodape fixed-bottom">
-          <div class="row conteudo">
-            <div class="col-4">
-                <h1>teste</h1>
-            </div>
-            <div class="col-4">
-                <h1>teste</h1>
-            </div>
-            <div class="col-4">
-                <h1>teste</h1>
-            </div>
+  <footer id="footer" class="page-footer font-small purple pt-4 fixed-bottom">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3" />
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3">
+          <!-- Links -->
+
+          <ul class="list-unstyled">
+            <li>
+              <router-link to= "/"> Suporte </router-link>
+            </li>
+            <li>
+              <router-link to= "/"> Política de privacidade </router-link>
+            </li>
+            <li>
+              <router-link to= "/"> Termos e condições </router-link>
+            </li>
+            <li>
+              <router-link to= "/"> Feedback </router-link>
+            </li>
+          </ul>
         </div>
-        <div class="row copyright">
-            <p>&copy; 2021-2022 projeto por Lucas, Victor e Ana</p>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3">
+          <!-- Links -->
+          <h5 class="text-uppercase">Redes sociais</h5>
+
+          <ul class="redes">
+              <router-link class="facebook" to= "/"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></router-link>
+              <router-link class="instagram" to= "/"> <font-awesome-icon :icon="['fab', 'instagram']" size="lg" /> </router-link>
+          </ul>
         </div>
+        <div class="col-md-4 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>
+            Here you can use rows and columns to organize your footer content.
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
     </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      2021 - 2022 Projeto de Lucas,Victor e Ana
+    </div>
+    <!-- Copyright -->
+  </footer>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-.rodape {
-    background-color: #180566;
-    height: 250px;
+#footer {
+  background-color: #180566;
+  color: white;
 }
-.conteudo {
-    height: 90%;
+.redes {
+  padding: 20px;
 }
-.copyright {
-    height: 10px;
-    font: 15px Georgia normal;
-    color: white;
-    font-display: flex;
-    justify-content: center;
+.facebook{
+padding: 5px;
+margin-right:0px;
+}
+.instagram{
+  text-align: center;
+padding: 5px;
+margin-left:0px;
 }
 </style>
