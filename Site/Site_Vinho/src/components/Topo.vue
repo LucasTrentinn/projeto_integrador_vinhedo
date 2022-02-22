@@ -47,7 +47,7 @@ export default {
 <style>
 /* Grid */
 .header .navbar {
-  background-color: #180566; 
+  background-color: #210536; 
 }
 
 .row {
