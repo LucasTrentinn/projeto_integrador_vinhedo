@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="page-footer font-small purple pt-4 fixed-bottom">
+  <footer id="footer" class="page-footer font-small purple pt-4" >
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
       <!-- Grid row -->
