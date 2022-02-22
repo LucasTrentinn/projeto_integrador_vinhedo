@@ -69,7 +69,7 @@ export default {};
 
 <style>
 .footer {
-  background-color: #180566;
+  background-color: #210536;
   color: white; 
   font: 20px Georgia normal;
 }
