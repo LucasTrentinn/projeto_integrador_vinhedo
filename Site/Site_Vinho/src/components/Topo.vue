@@ -4,14 +4,22 @@
       <div class="container-fluid row">
         <div class="col-2">
           <router-link class="navbar-brand" to="/"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></router-link>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
         <div class="collapse navbar-collapse col-4 menu" id="navbarSupportedContent">
-                <router-link to="/vinhos" class="nav-link">Vinhos</router-link>
-
-                <router-link to="/" class="nav-link">Sobre</router-link>
-
-                <router-link to="/" class="nav-link">Contato</router-link>
-
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link to="/vinhos" class="nav-link">Vinhos</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Sobre</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Contato</router-link>
+            </li>
+          </ul>
         </div>
         <div class="collapse navbar-collapse col-5 campoPesquisa" id="navbarSupportedContent">
           <form class="d-flex">
@@ -19,12 +27,11 @@
           </form>
         </div>
         <div class=" collapse navbar-collapse col-1 menu" id="navbarSupportedContent">
-          <router-link to="/" class="nav-link">Fazer login</router-link>
-        </div>
-        <div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li>
+              <router-link to="/" class="nav-link">Fazer login</router-link>
+            </li>
+          </ul>   
         </div>
       </div> 
     </nav>
@@ -38,12 +45,24 @@ export default {
 </script>
 
 <style>
+/* Grid */
 .header .navbar {
-  background-color: #180566;
-  display: flex;
-  
+  background-color: #180566; 
 }
 
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font: 20px Georgia normal;
+}
+
+/* Logo do Site */
 #logo{
     max-width: 100px;
     max-height: 100px;
@@ -51,9 +70,10 @@ export default {
     width: auto;
 }
 
+/* Input de Pesquisa */
 .campoPesquisa {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
@@ -74,19 +94,13 @@ textarea:focus, input:focus, select:focus{
   outline: 0;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font: 20px Georgia normal;
-}
-
+/* Links */
 .header a:link, .header a:active, .header a:visited {
-  color: white;
+  color: white !important;
 }
 
 .header a:hover {
-  color: rgb(173, 93, 173);
+  color: rgb(173, 93, 173) !important;
 }
 
 </style>
