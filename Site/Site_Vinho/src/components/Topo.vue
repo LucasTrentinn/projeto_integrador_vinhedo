@@ -1,13 +1,11 @@
 <template>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid row">
-        <div class="col-2">
-          <router-link class="navbar-brand" to="/"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></router-link>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+      <div class="container-fluid">
+        <router-link class="navbar-brand" to="/"><img id="logo" src="./imagens/logo.png" alt="Ícone do site"></router-link>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse col-4 menu" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -48,6 +46,7 @@ export default {
 /* Grid */
 .header .navbar {
   background-color: #210536; 
+  font: 20px Georgia normal;
 }
 
 .row {
@@ -55,12 +54,6 @@ export default {
   padding: 0px;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font: 20px Georgia normal;
-}
 
 /* Logo do Site */
 #logo{
@@ -73,7 +66,7 @@ export default {
 /* Input de Pesquisa */
 .campoPesquisa {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
