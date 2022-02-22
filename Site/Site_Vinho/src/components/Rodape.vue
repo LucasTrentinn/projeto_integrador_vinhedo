@@ -38,6 +38,7 @@
           <ul class="redes">
               <router-link class="facebook" to= "/"><font-awesome-icon :icon="['fab', 'facebook']" size="lg" /></router-link>
               <router-link class="instagram" to= "/"> <font-awesome-icon :icon="['fab', 'instagram']" size="lg" /> </router-link>
+              <router-link class="twitter" to= "/"> <font-awesome-icon :icon="['fab', 'twitter']" size="lg" /> </router-link>
           </ul>
         </div>
         <div class="col-md-3 mt-md-0 mt-3">
@@ -80,9 +81,12 @@ padding: 5px;
 margin-right:0px;
 }
 .instagram{
-  text-align: center;
 padding: 5px;
 margin-left:0px;
+}
+.twitter {
+  padding: 5px;
+margin-right:0px;
 }
 .footer a:link, .footer a:active, .footer a:visited {
   text-decoration: none;
