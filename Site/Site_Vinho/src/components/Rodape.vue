@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="page-footer font-small purple pt-4" >
+  <footer class="page-footer font-small purple pt-4 footer" >
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
       <!-- Grid row -->
@@ -9,21 +9,22 @@
         <hr class="clearfix w-100 d-md-none pb-3" />
 
         <!-- Grid column -->
-        <div class="col-md-4 mb-md-0 mb-3">
+        <div class="col-md-1 mb-md-0 mb-3"></div>
+        <div class="col-md-3 mb-md-0 mb-3">
           <!-- Links -->
 
-          <ul class="list-unstyled">
-            <li>
-              <router-link to= "/"> Suporte </router-link>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 listainfo">
+            <li class="nav-item">
+              <router-link to= "/" class="nav-link"> Suporte </router-link>
             </li>
-            <li>
-              <router-link to= "/"> Política de privacidade </router-link>
+            <li class="nav-item">
+              <router-link to= "/" class="nav-link"> Política de privacidade </router-link>
             </li>
-            <li>
-              <router-link to= "/"> Termos e condições </router-link>
+            <li class="nav-item">
+              <router-link to= "/" class="nav-link"> Termos e condições </router-link>
             </li>
-            <li>
-              <router-link to= "/"> Feedback </router-link>
+            <li class="nav-item">
+              <router-link to= "/" class="nav-link"> Feedback </router-link>
             </li>
           </ul>
         </div>
@@ -39,13 +40,14 @@
               <router-link class="instagram" to= "/"> <font-awesome-icon :icon="['fab', 'instagram']" size="lg" /> </router-link>
           </ul>
         </div>
-        <div class="col-md-4 mt-md-0 mt-3">
+        <div class="col-md-3 mt-md-0 mt-3">
           <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
+          <h5 class="text-uppercase">Informações adicionais</h5>
           <p>
             Here you can use rows and columns to organize your footer content.
           </p>
         </div>
+        <div class="col-md-1 mb-md-0 mb-3"></div>
         <!-- Grid column -->
       </div>
       <!-- Grid row -->
@@ -65,9 +67,10 @@ export default {};
 </script>
 
 <style>
-#footer {
+.footer {
   background-color: #180566;
-  color: white;
+  color: white; 
+  font: 20px Georgia normal;
 }
 .redes {
   padding: 20px;
@@ -80,5 +83,16 @@ margin-right:0px;
   text-align: center;
 padding: 5px;
 margin-left:0px;
+}
+.footer a:link, .footer a:active, .footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: rgb(173, 93, 173);
+}
+.listainfo{
+  display: flex;
+  justify-content: right;
 }
 </style>
