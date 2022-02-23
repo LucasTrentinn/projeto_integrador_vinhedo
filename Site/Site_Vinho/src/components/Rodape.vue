@@ -41,8 +41,8 @@
         <div class="col-md-3 mt-md-0 mt-3 info">
           <!-- Content -->
           <h5>Use o guia na sua versão mobile</h5>
-          <router-link class="mobile" to= "/"><img class="mobile" src="./imagens/apple.png" alt="aplicativo na Apple store"></router-link>
-          <router-link class="mobile" to= "/"><img class="mobile" src="./imagens/googlePlay.png" alt="aplicativo na Play store"></router-link>
+          <router-link class="mobile" to= "/"><img class="mobile" src="@/assets/img/apple.png" alt="aplicativo na Apple store"></router-link>
+          <router-link class="mobile" to= "/"><img class="mobile" src="@/assets/img/googlePlay.png" alt="aplicativo na Play store"></router-link>
         </div>
         <div class="col-md-1 mb-md-0 mb-3"></div>
         <!-- Grid column -->
