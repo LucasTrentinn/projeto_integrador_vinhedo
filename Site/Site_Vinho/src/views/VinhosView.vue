@@ -1,15 +1,23 @@
 <template>
-  <h1>Lista de Vinhos</h1>
-  <h2>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
-  <router-link to="/vinhos/1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</router-link>
+<div>
+  <div class="container-fluid intro"></div> 
+  <item-vinho />
+</div>
+
 </template>
 
 <script>
+import ItemVinho from '../components/ItemVinho.vue'
 export default {
+  components: { ItemVinho },
 
 }
 </script>
 
 <style>
+/* Grid */
+.intro {
+  height: 200px;
+}
 
 </style>
