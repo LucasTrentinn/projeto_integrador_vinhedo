@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import 'bootstrap'
 
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
