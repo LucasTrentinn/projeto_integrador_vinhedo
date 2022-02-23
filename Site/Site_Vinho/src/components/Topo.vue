@@ -1,13 +1,21 @@
 <template>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- Navbar do Header -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
+
+        <!-- Logo do Header -->
         <router-link class="navbar-brand" to="/"><img id="logo" src="@/assets/img/logo.png" alt="Ícone do site"></router-link>
+        
+        <!-- Botão do colapse no Header -->
         <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-4 menu" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Menu de opções do Header -->
+        <div class="menu collapse navbar-collapse col-4" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link to="/vinhos" class="nav-link">Vinhos</router-link>
             </li>
@@ -19,18 +27,23 @@
             </li>
           </ul>
         </div>
+
+        <!-- Input de pesquisa do Header -->
         <div class="collapse navbar-collapse col-5 campoPesquisa" id="navbarSupportedContent">
           <form class="d-flex">
             <input class="form-control" type="search" placeholder="Busque por vinhos e outros usuários..." autocomplete="off" id="campoPesquisa" size="63" onfocus="this.value='';">
           </form>
         </div>
+
+        <!-- Opção de login do header -->
         <div class=" collapse navbar-collapse col-1 menu" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li>
               <router-link to="/" class="nav-link">Fazer login</router-link>
             </li>
           </ul>   
         </div>
+        
       </div> 
     </nav>
   </header>
@@ -54,6 +67,11 @@ export default {
   padding: 0px;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Logo do Site */
 #logo{
@@ -66,7 +84,7 @@ export default {
 /* Input de Pesquisa */
 .campoPesquisa {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -89,11 +107,11 @@ textarea:focus, input:focus, select:focus{
 
 /* Links */
 .header a:link, .header a:active, .header a:visited {
-  color: white !important;
+  color: white;
 }
 
 .header a:hover {
-  color: rgb(173, 93, 173) !important;
+  color: rgb(173, 93, 173);
 }
 
 </style>
