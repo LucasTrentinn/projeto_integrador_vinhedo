@@ -74,7 +74,7 @@ export default {
     border-radius: 20px;
     height: 45px;
     border: 1px solid #ccc;
-    background-image:  url('./imagens/lupa.png'); 
+    background-image:  url('@/assets/img/lupa.png'); 
     background-position: 10px, 10px;
     background-size: 20px;
     background-repeat: no-repeat;
