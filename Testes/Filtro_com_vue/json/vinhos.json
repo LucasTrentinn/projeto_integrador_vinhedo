@@ -3,10 +3,7 @@
         "nome": "Villa Matilde Cecubo 2014",
         "volume": "750mL",
         "teorAlcóolico": "13,5%",
-        "uva": [
-            "Primitivo",
-            "Piedirosso"
-        ],
+        "uva": "Primitivo",
         "safra": "2014",
         "país": "Itália"
     }, {
