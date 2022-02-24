@@ -15,16 +15,13 @@
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 listainfo">
             <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter"> Suporte </router-link>
+              <router-link to= "/" class="nav-link listaFooter">Perguntas frequentes</router-link>
             </li>
             <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter"> Política de privacidade </router-link>
+              <router-link to= "/" class="nav-link listaFooter">Feedback</router-link>
             </li>
             <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter"> Termos e condições </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter"> Feedback </router-link>
+              <router-link to= "/" class="nav-link listaFooter">Suporte</router-link>
             </li>
           </ul>
         </div>

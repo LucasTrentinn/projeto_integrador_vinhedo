@@ -4,7 +4,7 @@
     class="carousel slide"
     data-bs-ride="carousel"
   >
-    <div class="carousel-inner">
+    <div class="carousel-inner"> 
       <div :class="{'carousel-item':true, 'active': index == 0}" v-for="(item, index) in items" :key="index">
         <div class="row">
           <tipos-carousel-item class="col-3" :tipo="tipo" v-for="tipo in item" :key="tipo.id" />
@@ -85,4 +85,6 @@ export default {
 </script>
 
 <style>
+
+
 </style>

@@ -4,7 +4,7 @@
       <div>
           {{ tipo.nome }}
       </div>
-          <img src="https://via.placeholder.com/275x650" alt="...">
+          <img src="https://via.placeholder.com/200x580" alt="...">
       </router-link>
   </div>
 </template>
