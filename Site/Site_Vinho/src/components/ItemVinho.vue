@@ -1,11 +1,12 @@
 <template>
-  <div class="item-vinho">
-      <router-link to="/vinhos/id">
-      <h1>{{ vinhos }}</h1>
-      <div class="item" v-for="vinho in vinhos" :key="vinho.id">
-          <img src="https://via.placeholder.com/440x470" alt="...">
-      </div>
-      </router-link>
+  <div class="item-vinho row">
+        <div class="item col-3" v-for="vinho in vinhos" :key="vinho.id">
+            <router-link to="/vinhos/id">
+            <img src="https://via.placeholder.com/400x600" alt="...">
+            <h3> {{ vinho.nome }}</h3>
+            </router-link>
+        </div>
+
   </div>
 </template>
 
@@ -17,7 +18,7 @@ export default {
         }
     },
     mounted() {
-        fetch("https://vinhos-dad4.restdb.io/rest/vinhos?apikey=d815307d94c90d5acdf9777002277880e7b3d")  
+        fetch("https://vinhos-dad4.restdb.io/rest/vinhos?apikey=6219283234fd6215658589e8")  
         .then(response => response.json())
         .then(data => this.vinhos = data);
     }
@@ -25,5 +26,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>

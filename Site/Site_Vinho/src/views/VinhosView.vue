@@ -1,23 +1,29 @@
 <template>
+<!-- Tudo -->
 <div>
-  <div class="container-fluid intro"></div> 
-  <item-vinho />
+
+  <!-- Título -->
+  <titulo texto="Seleção de Vinhos"></titulo>
+
+  <!-- Conteúdo da página -->
+  <div class="container-fluid">
+    <item-vinho />
+  </div>
+  
 </div>
 
 </template>
 
 <script>
 import ItemVinho from '../components/ItemVinho.vue'
+import Titulo from '../components/Titulo.vue'
 export default {
-  components: { ItemVinho },
-
+  components: { ItemVinho, Titulo },
+    
 }
 </script>
 
 <style>
-/* Grid */
-.intro {
-  height: 200px;
-}
+
 
 </style>
