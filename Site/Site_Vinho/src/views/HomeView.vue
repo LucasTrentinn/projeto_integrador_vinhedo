@@ -15,7 +15,7 @@
           <tipos-carousel />
         </section>
         <section class="col-4">
-          <router-link to="/"> <img class="bannerGuia" src="https://via.placeholder.com/450x650" alt="..."> </router-link>
+          <router-link to="/"> <img class="bannerGuia" src="https://via.placeholder.com/450x625" alt="..."> </router-link>
         </section>
       </div>
     </div>
