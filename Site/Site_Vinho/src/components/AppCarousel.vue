@@ -1,5 +1,5 @@
 <template>
-  <div id="appCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div :id="carouselName" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div
         :class="{ 'carousel-item': true, active: index == 0 }"
@@ -14,7 +14,7 @@
     <button
       class="carousel-control-prev"
       type="button"
-      data-bs-target="#appCarousel"
+      :data-bs-target="`#${carouselName}`"
       data-bs-slide="prev"
     >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -23,7 +23,7 @@
     <button
       class="carousel-control-next"
       type="button"
-      data-bs-target="#appCarousel"
+      :data-bs-target="`#${carouselName}`"
       data-bs-slide="next"
     >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -42,6 +42,10 @@ export default {
     qtde: {
       type: Number,
       default: 4,
+    },
+    carouselName: {
+      type: String,
+      default: "appCarousel",
     },
   },
   data() {

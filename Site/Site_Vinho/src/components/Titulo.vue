@@ -18,7 +18,7 @@ export default {
 <style>
 /* Grid */
 .intro {
-  height: 200px;
+  height: 100px;
 }
 
 /* Título */
