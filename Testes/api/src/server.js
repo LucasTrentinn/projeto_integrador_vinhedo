@@ -10,8 +10,9 @@ const Modelo = require('./framework/Modelo')
 const usuarios = require('./routes/usuariosRotas')
 const vinhos = require('./routes/vinhosRotas')
 const cartaDeVinhos = require('./routes/cartaDeVinhosRotas')
-const vinhoTipos = require('./routes/vinhoTipos')
-const endereco = require('./routes/enderecoRotas')
+const avaliacao = require('./routes/avaliacaoRotas')
+const vinhoTipos = require('./routes/vinhoTipos') 
+const endereco = require('./routes/enderecoRotas') 
 
 Modelo.dir = join(__dirname, '..', 'json')
 
@@ -26,7 +27,10 @@ app.get('/', (req, res) => {
 
 app.use('/usuarios', usuarios)
 app.use('/vinhos', vinhos)
-app.use('cartaDeVinhos', cartaDeVinhos)
+app.use('/cartaDeVinhos', cartaDeVinhos)
+app.use('/avaliacoes', avaliacao)
+app.use('/vinhoTipos', vinhoTipos)
+app.use('/endereco', endereco)
 
 app.listen(port, () => {
     console.log(`Conectado à porta ${port}.`)

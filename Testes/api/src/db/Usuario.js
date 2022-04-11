@@ -2,7 +2,7 @@ const Modelo = require("../framework/Modelo");
 
 
 class Usuario extends Modelo {
-    static file = 'usuarios.json'
+    static arquivo = 'usuarios.json'
 
     nome = ''
     username = ''
@@ -11,6 +11,10 @@ class Usuario extends Modelo {
     biografia = ''
     endereco = ''
     cartaDeVinhos = ''
+
+    static consultarEmailSenha(email, senha) {
+        return this.listar().find(usuario => usuario.email && usuario.senha)
+    }
 
 }
 

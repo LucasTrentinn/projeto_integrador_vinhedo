@@ -1,7 +1,7 @@
 const Modelo = require("../framework/Modelo");
 
 class Endereco extends Modelo {
-    static file = 'enderecos.json'
+    static arquivo = 'enderecos.json'
 
     cep = ''
     logradouro = ''

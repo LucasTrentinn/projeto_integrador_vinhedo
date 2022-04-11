@@ -1,7 +1,7 @@
 const Modelo = require("../framework/Modelo");
 
 class Avaliacao extends Modelo {
-    static file = 'avaliacoes.json'
+    static arquivo = 'avaliacoes.json'
 
     usuario = ''
     nota = 0

@@ -9,11 +9,11 @@ class Modelo {
     }
 
     id = 0
-    dateSubmit = new Date()
-    dateAtt = new Date()
+    dataEnvio = new Date()
+    dataAtt = new Date()
 
-    static get filePath() {
-        return join(this.dir, this.file)
+    static get arquivoCaminho() {
+        return join(this.dir, this.arquivo)
     }
 
     assign(obj={}) {
@@ -21,59 +21,59 @@ class Modelo {
         return this
     }
 
-    static list() {
+    static listar() {
         try {
-            const data = fs.existsSync(this.filePath) ?
-                fs.readFileSync(this.filePath) : ''
+            const dados = fs.existsSync(this.arquivoCaminho) ?
+                fs.readFileSync(this.arquivoCaminho) : ''
 
-            return JSON.parse(data).map(obj => new this().assign(obj))
+            return JSON.parse(dados).map(obj => new this().assign(obj))
         }
         catch(err) {
             return []
         }
     }
 
-    static check(id) {
-        let data = this.list().filter((obj) => obj.id == id)
+    static consultar(id) {
+        let dados = this.listar().filter((obj) => obj.id == id)
 
-        if(data.length == 0) {
+        if(dados.length == 0) {
             throw new Error("Objeto não encontrado.")
         }
 
         const obj = new this()
-        obj.assign(data[0])
+        obj.assign(dados[0])
 
         return obj
     }
 
-    save() {
-        let data = this.constructor.list()
+    salvar() {
+        let dados = this.constructor.listar()
 
         if(this.id == 0) {
-            this.id = data.length > 0 ? data[data.length - 1].id + 1 : 1
-            data.push(this)
+            this.id = dados.length > 0 ? dados[dados.length - 1].id + 1 : 1
+            dados.push(this)
         } else {
-            let idx = data.findIndex((obj) => obj.id == this.id)
+            let idx = dados.findIndex((obj) => obj.id == this.id)
 
             if(idx == -1)
                 throw new Error("Objeto não encontrado.")
             
-            data[idx] = this
+            dados[idx] = this
         }
 
-        fs.writeFileSync(this.constructor.filePath, JSON.stringify(data, null, '\t'))
+        fs.writeFileSync(this.constructor.arquivoCaminho, JSON.stringify(dados, null, '\t'))
     }
 
-    delete() {
-        let data = this.constructor.list()
-        let idx = data.findIndex((obj) => obj.id == this.id)
+    deletar() {
+        let dados = this.constructor.listar()
+        let idx = dados.findIndex((obj) => obj.id == this.id)
 
         if(idx == -1)
             throw new Error("Objeto não encontrado.")
 
-        data.splice(idx, 1)
+        dados.splice(idx, 1)
 
-        fs.writeFileSync(this.constructor.filePath, JSON.stringify(data, null, '\t'))
+        fs.writeFileSync(this.constructor.arquivoCaminho, JSON.stringify(dados, null, '\t'))
     }
 }
 

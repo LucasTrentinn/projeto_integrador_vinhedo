@@ -1,7 +1,7 @@
 const Modelo = require("../framework/Modelo");
 
 class Vinho extends Modelo {
-    static file = 'vinhos.json'
+    static arquivo = 'vinhos.json'
 
     nome = ''
     safra = 0
