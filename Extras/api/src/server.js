@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const { join } = require('path')
 const port = 3001
 const Modelo = require('./framework/Modelo')
-
+const cors = require('cors')
 
 // Rotas
 const usuarios = require('./routes/usuariosRotas')
@@ -19,6 +19,7 @@ Modelo.dir = join(__dirname, '..', 'json')
 // App
 const app = express()
 app.use(bodyParser.json())
+app.use(cors())
 
 // Métodos 
 app.get('/', (req, res) => {
