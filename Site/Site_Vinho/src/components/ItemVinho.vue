@@ -10,19 +10,18 @@
   </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            vinhos: [],
-        }
-    },
-    mounted() {
-        fetch("https://vinhos-dad4.restdb.io/rest/vinhos?apikey=6219283234fd6215658589e8")  
-        .then(response => response.json())
-        .then(data => this.vinhos = data);
-    }
-}
+<script setup>
+import { mapActions } from 'pinia';
+import { computed, onMounted } from 'vue';
+import { useVinhosStore } from '../stores/vinhos';
+
+const store = useVinhosStore()
+const vinhos = computed(() => store.vinhos)
+
+
+onMounted(() => {
+  store.consultarTodos()
+})
 </script>
 
 <style>
