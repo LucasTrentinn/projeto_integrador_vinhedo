@@ -11,7 +11,18 @@
       <!-- Carrossel e Guia -->
       <div class="container-fluid row">
         <section class="col-8">
-          <tipos-carousel />
+          <app-carousel
+            :items="tipos"
+            :qtde="4"
+            v-slot="slotProps"
+            data-bs-interval="false">
+            <div class="col-3">
+              <img class="imagem" src="https://via.placeholder.com/250x550" alt="..." />
+              <h3>
+                {{ slotProps.item.nome }}
+              </h3>
+            </div>
+          </app-carousel>
         </section>
         <section class="col-4">
           <router-link to="/">
@@ -43,20 +54,32 @@
     <!-- Parte 3 da Home -->
     <div>
       <section>
-        <titulo texto='Mais avaliados' />
-        <app-carousel :items="vinhos" :qtde="6" v-slot="slotProps" data-bs-interval="false" >
+        <titulo texto="Mais avaliados" />
+        <app-carousel
+        carouselName="appCarousel2"
+          :items="vinhos"
+          :qtde="6"
+          v-slot="slotProps"
+          data-bs-interval="false"
+        >
           <div class="col-2">
-            <img src="https://via.placeholder.com/200x250" alt="..." />
+            <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
             <h3>
               {{ slotProps.item.nome }}
             </h3>
           </div>
         </app-carousel>
 
-        <titulo texto='Mais procurados hoje' />
-        <app-carousel carouselName="appCarousel2" :items="vinhos" :qtde="6" v-slot="slotProps" data-bs-interval ="false">
+        <titulo texto="Mais procurados hoje" />
+        <app-carousel
+          carouselName="appCarousel3"
+          :items="vinhos"
+          :qtde="6"
+          v-slot="slotProps"
+          data-bs-interval="false"
+        >
           <div class="col-2">
-            <img src="https://via.placeholder.com/200x250" alt="..." />
+            <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
             <h3>
               {{ slotProps.item.nome }}
             </h3>
@@ -69,13 +92,38 @@
 
 <script>
 import AppCarousel from "../components/AppCarousel.vue";
-import TiposCarousel from "../components/TiposCarousel.vue";
-import Titulo from '../components/Titulo.vue';
+import Titulo from "../components/Titulo.vue";
 export default {
-  components: { TiposCarousel, AppCarousel, Titulo },
+  components: { AppCarousel, Titulo },
   data() {
     return {
       vinhos: [],
+      tipos: [
+        {
+          id: 1,
+          nome: "Vinho Branco",
+        },
+        {
+          id: 2,
+          nome: "Vinho Rosé",
+        },
+        {
+          id: 3,
+          nome: "Vinho Tinto",
+        },
+        {
+          id: 4,
+          nome: "Vinho Branco",
+        },
+        {
+          id: 5,
+          nome: "Vinho Rosé",
+        },
+        {
+          id: 6,
+          nome: "Vinho Tinto",
+        },
+      ],
     };
   },
   mounted() {
@@ -132,4 +180,8 @@ export default {
   position: relative;
   top: -40px;
 }
+.imagem {
+  border-radius: 25px;
+}
+
 </style>
