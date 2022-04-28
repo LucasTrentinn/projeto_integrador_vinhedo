@@ -1,35 +1,24 @@
 <template>
   <div :id="carouselName" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div
-        :class="{ 'carousel-item': true, active: index == 0 }"
-        v-for="(item, index) in dados"
-        :key="index"
-      >
+      <div :class="{ 'carousel-item': true, active: index == 0 }" v-for="(item, index) in dados" :key="index">
         <div class="row">
           <slot :item="i" v-for="(i, index) in item" :key="index" />
         </div>
       </div>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      :data-bs-target="`#${carouselName}`"
-      data-bs-slide="prev"
-    >
+    <button class="carousel-control-prev btn-style" type="button" :data-bs-target="`#${carouselName}`"
+      data-bs-slide="prev" :class="{'carousel-menor': carouselMenor}">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
 
-    <button
-      class="carousel-control-next"
-      type="button"
-      :data-bs-target="`#${carouselName}`"
-      data-bs-slide="next"
-    >
+    <button class="carousel-control-next btn-style" type="button" :data-bs-target="`#${carouselName}`"
+      data-bs-slide="next" :class="{'carousel-menor': carouselMenor}">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+
   </div>
 </template>
 
@@ -48,7 +37,7 @@ export default {
       type: String,
       default: "appCarousel",
     },
-    setaMaior: {
+    carouselMenor: {
       type: Boolean,
       default: false,
     },
@@ -72,4 +61,14 @@ export default {
 </script>
 
 <style>
+.btn-style {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 250px;
+}
+
+.carousel-menor {
+  top: 100px ;
+}
 </style>

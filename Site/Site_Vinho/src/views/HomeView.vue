@@ -15,7 +15,8 @@
             :items="tipos"
             :qtde="4"
             v-slot="slotProps"
-            data-bs-interval="false">
+            data-bs-interval="false"
+            carousel-maior>
             <div class="col-3">
               <img class="imagem" src="https://via.placeholder.com/250x550" alt="..." />
               <h3>
@@ -61,6 +62,7 @@
           :qtde="6"
           v-slot="slotProps"
           data-bs-interval="false"
+          carousel-menor
         >
           <div class="col-2">
             <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
@@ -77,6 +79,7 @@
           :qtde="6"
           v-slot="slotProps"
           data-bs-interval="false"
+          carousel-menor
         >
           <div class="col-2">
             <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
