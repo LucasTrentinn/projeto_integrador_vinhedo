@@ -2,7 +2,7 @@
   <div class="item-vinho row">
         <div class="item col-3" v-for="vinho in vinhos" :key="vinho.id">
             <router-link to="/vinhos/id">
-            <img src="https://via.placeholder.com/400x600" alt="...">
+            <img class="imagem" src="https://via.placeholder.com/370x370" alt="...">
             <h3> {{ vinho.nome }}</h3>
             </router-link>
         </div>
