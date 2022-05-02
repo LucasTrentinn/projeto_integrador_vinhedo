@@ -1,12 +1,27 @@
 <template>
-  <h1>{{ $route.params.id }}
-  </h1>
+  <div>
+    <h5> ID </h5>
+    <h1>{{ vinho.id }}</h1>
+    <h5> nome </h5>
+    <h1>{{ vinho.nome }}</h1>
+    <h5> safra </h5>
+    <h1>{{ vinho.safra }}</h1>
+    <h5> {{$route.params.id}} </h5>
+  </div>
 </template>
 
-<script>
-export default {
+<script setup>
+import { computed, onMounted } from "@vue/runtime-core";
+import { useVinhosStore } from "../stores/vinhos";
+import { useRouter, useRoute } from 'vue-router'
 
-}
+const route = useRoute()
+const store = useVinhosStore()
+const vinho = computed(() => store.vinho)
+
+onMounted(() => {
+  store.selecionarVinho(route.params.id)
+})
 </script>
 
 <style>
