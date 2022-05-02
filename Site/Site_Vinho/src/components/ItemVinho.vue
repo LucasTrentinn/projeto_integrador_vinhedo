@@ -1,7 +1,7 @@
 <template>
   <div class="item-vinho row">
         <div class="item col-3" v-for="vinho in vinhos" :key="vinho.id">
-            <router-link to="/vinhos/id">
+            <router-link :to="{ name: 'vinhoz', params: { id: vinho.id } }">
             <img src="https://via.placeholder.com/400x600" alt="...">
             <h3> {{ vinho.nome }}</h3>
             </router-link>
