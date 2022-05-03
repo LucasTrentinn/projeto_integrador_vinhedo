@@ -47,7 +47,7 @@
           Nosso intuito é auxiliar a escolha do usuário em seu vinho para sua
           ocasião.
         </p>
-        <button class="button">Crie sua conta</button>
+        <button class="botaoHome">Crie sua conta</button>
       </div>
       <div class="col-4"></div>
     </div>
@@ -118,7 +118,7 @@ onMounted(() => {
   color: white;
   text-align: center;
 }
-.button {
+.botaoHome {
   border: none;
   color: black;
   padding: 15px 32px;

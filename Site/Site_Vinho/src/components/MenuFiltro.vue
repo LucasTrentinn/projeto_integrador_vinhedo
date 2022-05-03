@@ -1,6 +1,6 @@
 <template>
-  <div class="sticky-top container-fluid">
-    <nav class="menu col menuFiltro">
+  <div class="sticky-top container-fluid row">
+    <nav class="menu menuFiltro col-10">
         <select class="form-select" >
           <option selected> Tipos </option>
           <option v-for="tipo in tipos" :key="tipo.id">{{tipo.nome}}</option>
@@ -20,13 +20,12 @@
         <select class="form-select">
           <option selected>Tipos</option>
         </select>
-        <select class="form-select">
-          <option selected>País</option>
-        </select>
-        <button>
-          Filtrar
-        </button>
+        
     </nav>
+    <button class="botaoMenu col-1">
+          Filtrar
+    </button>
+    
     
   </div>
 </template>
@@ -47,7 +46,7 @@ onMounted(() => {
 <style>
 .menuFiltro {
   padding: 5px;
-  margin: 0px 40px 30px 40px;
+  margin: 0px 10px 30px 40px;
   border: 1px solid black;
   border-radius: 10px;
   align-self: flex-start;
@@ -61,12 +60,17 @@ onMounted(() => {
 }
 
 .form-select {
-  border: none
+  border: none;
 }
 
 .sticky-top {
   top: 5px;
 }
-
+.botaoMenu {
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: white;
+  height: 48px;
+}
 
 </style>
