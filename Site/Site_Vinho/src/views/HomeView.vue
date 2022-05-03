@@ -109,22 +109,6 @@ onMounted(() => {
   storeTipos.consultarTodos()
   storeVinhos.consultarTodos()
 })
-
-// export default {
-//   components: { AppCarousel, Titulo },
-//   data() {
-//     return {
-//       vinhos: [],
-//     };
-//   },
-//   mounted() {
-//     fetch(
-//       "https://vinhos-dad4.restdb.io/rest/vinhos?apikey=6219283234fd6215658589e8"
-//     )
-//       .then((response) => response.json())
-//       .then((data) => (this.vinhos = data));
-//   },
-// };
 </script>
 
 <style>

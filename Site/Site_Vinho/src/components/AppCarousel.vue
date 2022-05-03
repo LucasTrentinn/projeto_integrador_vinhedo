@@ -74,16 +74,10 @@ export default {
   border-radius: 100%;
   background-color: black;
   opacity: 30%;
-  
 }
 
 .carousel-menor {
   top: 100px ;
-  
-  
 }
-/* .carousel-maior{
-  left: 11px;
-} */
 
 </style>

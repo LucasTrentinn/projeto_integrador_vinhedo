@@ -1,39 +1,11 @@
 <template>
   <!-- Tudo -->
   <div>
-    <div>
-      <nav>
-      <ul class="menu">
-      <form>
-        <select class="form-select">
-          <option selected>Tipos</option>
-        </select>
-        <select class="form-select">
-          <option selected>País</option>
-        </select>
-        <select class="form-select">
-          <option selected>Uva</option>
-        </select>
-        <select class="form-select">
-          <option selected>Região</option>
-        </select>
-        <select class="form-select">
-          <option selected>Harmonização</option>
-        </select>
-        <select class="form-select">
-          <option selected>Tipos</option>
-        </select>
-        <select class="form-select">
-          <option selected>País</option>
-        </select>
-      </form>
-      </ul>
-      </nav>
-    </div>
 
     <!-- Título -->
     <titulo texto="Seleção de Vinhos"></titulo>
 
+    <menu-filtro />
     <!-- Conteúdo da página -->
     <div class="container-fluid">
       <item-vinho />
@@ -41,12 +13,11 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import ItemVinho from "../components/ItemVinho.vue";
 import Titulo from "../components/Titulo.vue";
-export default {
-  components: { ItemVinho, Titulo },
-};
+import MenuFiltro from "../components/MenuFiltro.vue";
+
 </script>
 
 <style>
