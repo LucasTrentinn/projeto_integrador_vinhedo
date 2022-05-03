@@ -13,12 +13,12 @@
         <section class="col-8">
           <app-carousel
             :items="tipos"
-            :qtde="4"
+            :qtde="3"
             v-slot="slotProps"
             data-bs-interval="false"
             carousel-maior>
-            <div class="col-3 conteudo">
-              <img class="imagem" src="https://via.placeholder.com/250x550" alt="..." />
+            <div class="col-4 conteudo">
+              <img class="imagem" src="https://via.placeholder.com/300x550" alt="..." />
               <h3>
                 {{ slotProps.item.nome }}
               </h3>
@@ -93,50 +93,38 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { computed, onMounted } from "@vue/runtime-core";
 import AppCarousel from "../components/AppCarousel.vue";
 import Titulo from "../components/Titulo.vue";
-export default {
-  components: { AppCarousel, Titulo },
-  data() {
-    return {
-      vinhos: [],
-      tipos: [
-        {
-          id: 1,
-          nome: "Vinho Branco",
-        },
-        {
-          id: 2,
-          nome: "Vinho Rosé",
-        },
-        {
-          id: 3,
-          nome: "Vinho Tinto",
-        },
-        {
-          id: 4,
-          nome: "Vinho Branco",
-        },
-        {
-          id: 5,
-          nome: "Vinho Rosé",
-        },
-        {
-          id: 6,
-          nome: "Vinho Tinto",
-        },
-      ],
-    };
-  },
-  mounted() {
-    fetch(
-      "https://vinhos-dad4.restdb.io/rest/vinhos?apikey=6219283234fd6215658589e8"
-    )
-      .then((response) => response.json())
-      .then((data) => (this.vinhos = data));
-  },
-};
+import { useVinhosStore } from "../stores/vinhos";
+import { useVinhoTiposStore } from "../stores/vinhoTipos";
+
+const storeTipos = useVinhoTiposStore()
+const storeVinhos = useVinhosStore()
+const vinhos = computed(() => storeVinhos.vinhos)
+const tipos = computed(() => storeTipos.tipos)
+
+onMounted(() => {
+  storeTipos.consultarTodos()
+  storeVinhos.consultarTodos()
+})
+
+// export default {
+//   components: { AppCarousel, Titulo },
+//   data() {
+//     return {
+//       vinhos: [],
+//     };
+//   },
+//   mounted() {
+//     fetch(
+//       "https://vinhos-dad4.restdb.io/rest/vinhos?apikey=6219283234fd6215658589e8"
+//     )
+//       .then((response) => response.json())
+//       .then((data) => (this.vinhos = data));
+//   },
+// };
 </script>
 
 <style>
