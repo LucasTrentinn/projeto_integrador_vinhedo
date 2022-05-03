@@ -17,8 +17,8 @@
             v-slot="slotProps"
             data-bs-interval="false"
             carousel-maior>
-            <div class="col-3 conteudo">
-              <img class="imagem" src="https://via.placeholder.com/250x550" alt="..." />
+            <div class="col-4 conteudo">
+              <img class="imagem" src="https://via.placeholder.com/300x550" alt="..." />
               <h3>
                 {{ slotProps.item.nome }}
               </h3>
