@@ -23,9 +23,7 @@
         <select class="form-select">
           <option selected>País</option>
         </select>
-        <button>
-          Filtrar
-        </button>
+        <button> Filtrar </button>
     </nav>
     
   </div>
@@ -56,12 +54,12 @@ onMounted(() => {
 
 .form-select:focus {
   box-shadow: 0 0 0 0;
-  border: 0 none;
+  border: 0 0 0 0;
   outline: 0;
 }
 
 .form-select {
-  border: none
+  border: none;
 }
 
 .sticky-top {
