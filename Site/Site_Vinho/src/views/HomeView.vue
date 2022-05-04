@@ -20,11 +20,11 @@
           >
             <div class="col-4 conteudo">
               <img
-                class="imagem"
-                src="https://via.placeholder.com/300x550"
+                class="imagem imagemTipos"
+                :src="slotProps.item.imagem"
                 alt="..."
               />
-              <h3>
+              <h3 class="textoTipos">
                 {{ slotProps.item.nome }}
               </h3>
             </div>
@@ -33,7 +33,7 @@
         <section class="col-4">
           <router-link to="/">
             <img
-              class="bannerGuia"
+              class="imagemBanner"
               src="https://via.placeholder.com/450x625"
               alt="..."
             />
@@ -125,12 +125,19 @@ onMounted(() => {
 </script>
 
 <style>
+/* Corpo */
 .fundo {
   background-color: #4b0082;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   text-align: center;
 }
+
+.meio {
+  padding: 50px 0px;
+}
+
+/* Botões */
 .botaoHome {
   border: none;
   color: black;
@@ -144,37 +151,56 @@ onMounted(() => {
   text-transform: uppercase;
   border-radius: 10rem;
 }
-.meio {
-  padding: 50px 0px;
+
+/* Textos */
+.frase2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  font: 50px Georgia normal;
 }
+
 .frase {
   padding: 10px;
-  font: Georgia normal;
-  
+  font: Georgia normal;  
 }
+
+.textoTipos {
+  position: absolute;
+  top: 45%;
+  font: 50px Georgia bold;
+}
+
+/* Detalhes */
 .hr {
   border: 1px solid;
   border-radius: 5px;
   color: #006400;
   opacity: 1;
 }
-.frase2 {
-  margin-top: 20px;
-  margin-left: 30px;
-  font: 50px Georgia normal;
-}
-.bannerGuia {
-  border: 1px solid black;
-  border-radius: 80px;
-  position: relative;
-  top: -40px;
-}
-.imagem {
-  border-radius: 25px;
-}
+
+/* Carrosel */
 .conteudo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Imagens */
+.imagem {
+  border-radius: 25px;
+}
+
+.imagemTipos {
+  width: 300px;
+  height: 550px;
+  opacity: 70%;
+}
+
+.imagemBanner {
+  border: 1px solid black;
+  border-radius: 80px;
+  position: relative;
+  top: -40px;
+}
+
 </style>
