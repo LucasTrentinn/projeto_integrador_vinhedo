@@ -26,6 +26,8 @@ app.get('/', (req, res) => {
     res.send('Vinhedo')
 })
 
+app.use(express.static('public'))
+
 app.use('/usuarios', usuarios)
 app.use('/vinhos', vinhos)
 app.use('/cartaDeVinhos', cartaDeVinhos)

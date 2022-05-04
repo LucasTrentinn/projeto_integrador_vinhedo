@@ -4,6 +4,7 @@ class VinhoTipo extends Modelo {
     static arquivo = 'vinhoTipos.json'
 
     nome = ''
+    imagem = ''
 
 }
 
