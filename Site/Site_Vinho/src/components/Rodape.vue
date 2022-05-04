@@ -37,8 +37,7 @@
         </div>
         <div class="col-md-3 mt-md-0 mt-3 info">
           <!-- Content -->
-          <h5>Use o guia na sua versão mobile</h5>
-          <router-link class="mobile" to= "/"><img class="mobile" src="@/assets/img/apple.png" alt="aplicativo na Apple store"></router-link>
+          <h5>Baixe nosso guia do vinho</h5>
           <router-link class="mobile" to= "/"><img class="mobile" src="@/assets/img/googlePlay.png" alt="aplicativo na Play store"></router-link>
         </div>
         <div class="col-md-1 mb-md-0 mb-3"></div>
@@ -50,7 +49,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 ">
-      2021 - 2022 Projeto de Lucas,Victor e Ana
+      <h6><strong> 2021 - 2022 Projeto de Lucas,Victor e Ana</strong></h6>
     </div>
     <!-- Copyright -->
   </footer>

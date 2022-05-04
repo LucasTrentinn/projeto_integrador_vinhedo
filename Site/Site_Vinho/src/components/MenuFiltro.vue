@@ -20,14 +20,9 @@
         <select class="form-select">
           <option selected>Tipos</option>
         </select>
-<<<<<<< HEAD
         <select class="form-select">
           <option selected>País</option>
         </select>
-        <button> Filtrar </button>
-=======
-        
->>>>>>> daac72f196da281cc8ec2aa0c80e54da0cd92a59
     </nav>
     <button class="botaoMenu col-1">
           Filtrar
@@ -58,6 +53,8 @@ onMounted(() => {
   border-radius: 10px;
   align-self: flex-start;
   background-color: white;
+  box-shadow: 20px 5px 50px #888888;
+ 
 }
 
 .form-select:focus {
@@ -78,6 +75,7 @@ onMounted(() => {
   border-radius: 7px;
   background-color: white;
   height: 48px;
+  box-shadow: 25px 20px 50px #888888;
 }
 
 </style>

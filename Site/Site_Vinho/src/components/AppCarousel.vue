@@ -72,8 +72,8 @@ export default {
   top: 250px;
   border: 2px solid black; 
   border-radius: 100%;
-  background-color: black;
-  opacity: 30%;
+  background-color: #8888;
+  opacity: 50%;
 }
 
 .carousel-menor {

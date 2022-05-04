@@ -16,9 +16,14 @@
             :qtde="3"
             v-slot="slotProps"
             data-bs-interval="false"
-            carousel-maior>
+            carousel-maior
+          >
             <div class="col-4 conteudo">
-              <img class="imagem" src="https://via.placeholder.com/300x550" alt="..." />
+              <img
+                class="imagem"
+                src="https://via.placeholder.com/300x550"
+                alt="..."
+              />
               <h3>
                 {{ slotProps.item.nome }}
               </h3>
@@ -41,12 +46,16 @@
     <div class="row fundo">
       <div class="col-4"></div>
       <div class="col-4 meio">
-        <h2 class="frase">Um guia para os amantes de vinhos</h2>
+        <h2 class="frase"><strong>NOSSO OBJETIVO</strong></h2>
         <hr class="hr" />
-        <p>
-          Nosso intuito é auxiliar a escolha do usuário em seu vinho para sua
-          ocasião.
-        </p>
+        <h5 class="frase">
+          <strong>
+            Um Site criado para ajudar você iniciante ou experiente no mundo dos
+            vinhos a escolher o vinho perfeito para a sua ocasião,após uma lista
+            de perguntas respondidas por você nosso programa irá recomendar o
+            vinho perfeito para o seu evento social
+          </strong>
+        </h5>
         <button class="botaoHome">Crie sua conta</button>
       </div>
       <div class="col-4"></div>
@@ -57,7 +66,7 @@
       <section>
         <titulo texto="Mais avaliados" />
         <app-carousel
-        carouselName="appCarousel2"
+          carouselName="appCarousel2"
           :items="vinhos"
           :qtde="6"
           v-slot="slotProps"
@@ -65,7 +74,11 @@
           carousel-menor
         >
           <div class="col-2 conteudo">
-            <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
+            <img
+              class="imagem"
+              src="https://via.placeholder.com/200x250"
+              alt="..."
+            />
             <h3>
               {{ slotProps.item.nome }}
             </h3>
@@ -82,7 +95,11 @@
           carousel-menor
         >
           <div class="col-2 conteudo">
-            <img class="imagem" src="https://via.placeholder.com/200x250" alt="..." />
+            <img
+              class="imagem"
+              src="https://via.placeholder.com/200x250"
+              alt="..."
+            />
             <h3>
               {{ slotProps.item.nome }}
             </h3>
@@ -100,15 +117,15 @@ import Titulo from "../components/Titulo.vue";
 import { useVinhosStore } from "../stores/vinhos";
 import { useVinhoTiposStore } from "../stores/vinhoTipos";
 
-const storeTipos = useVinhoTiposStore()
-const storeVinhos = useVinhosStore()
-const vinhos = computed(() => storeVinhos.vinhos)
-const tipos = computed(() => storeTipos.tipos)
+const storeTipos = useVinhoTiposStore();
+const storeVinhos = useVinhosStore();
+const vinhos = computed(() => storeVinhos.vinhos);
+const tipos = computed(() => storeTipos.tipos);
 
 onMounted(() => {
-  storeTipos.consultarTodos()
-  storeVinhos.consultarTodos()
-})
+  storeTipos.consultarTodos();
+  storeVinhos.consultarTodos();
+});
 </script>
 
 <style>
@@ -126,7 +143,7 @@ onMounted(() => {
   display: inline-block;
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 155px;
+  margin-top: 100px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 10rem;
@@ -137,6 +154,7 @@ onMounted(() => {
 .frase {
   padding: 10px;
   font: Georgia normal;
+  
 }
 .hr {
   border: 1px solid;
@@ -163,5 +181,4 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
 }
-
 </style>
