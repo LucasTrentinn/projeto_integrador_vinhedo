@@ -46,15 +46,11 @@
     <div class="row fundo">
       <div class="col-4"></div>
       <div class="col-4 meio">
-        <h2 class="frase"><strong>NOSSO OBJETIVO</strong></h2>
+        <h2 class="frase">UM GUIA PARA OS AMANTES DE VINHO</h2>
         <hr class="hr" />
         <h5 class="frase">
-          <strong>
-            Um Site criado para ajudar você iniciante ou experiente no mundo dos
-            vinhos a escolher o vinho perfeito para a sua ocasião,após uma lista
-            de perguntas respondidas por você nosso programa irá recomendar o
-            vinho perfeito para o seu evento social
-          </strong>
+            Um site criado para ajudar você, iniciante ou experiente no mundo dos
+            vinhos, a escolher o vinho perfeito para sua ocasião
         </h5>
         <button class="botaoHome">Crie sua conta</button>
       </div>

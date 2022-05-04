@@ -17,12 +17,6 @@
         <select class="form-select">
           <option selected>Harmonização</option>
         </select>
-        <select class="form-select">
-          <option selected>Tipos</option>
-        </select>
-        <select class="form-select">
-          <option selected>País</option>
-        </select>
     </nav>
     <button class="botaoMenu col-1">
           Filtrar
