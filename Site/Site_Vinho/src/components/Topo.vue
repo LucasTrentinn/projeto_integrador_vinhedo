@@ -6,7 +6,7 @@
       <div class="container-fluid">
 
         <!-- Logo do Header -->
-        <router-link class="navbar-brand" to="/"><img id="logo" src="@/assets/img/logo.png" alt="Ícone do site"></router-link>
+        <router-link class="navbar-brand" to="/"><img id="logo" src="@/assets/img/logo_contorno.png" alt="Ícone do site"></router-link>
         
         <!-- Botão do colapse no Header -->
         <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
