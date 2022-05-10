@@ -18,9 +18,6 @@
               <router-link to= "/" class="nav-link listaFooter">Perguntas frequentes</router-link>
             </li>
             <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter">Feedback</router-link>
-            </li>
-            <li class="nav-item">
               <router-link to= "/" class="nav-link listaFooter">Suporte</router-link>
             </li>
           </ul>
