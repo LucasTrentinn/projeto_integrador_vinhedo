@@ -80,7 +80,7 @@ margin-right:0px;
   color: white;
 }
 .footer a:hover {
-  color: rgb(173, 93, 173);
+  color: #ad5dad;
 }
 .listainfo{
   display: flex;
