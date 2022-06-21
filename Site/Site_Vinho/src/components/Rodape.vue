@@ -18,9 +18,6 @@
               <router-link to= "/" class="nav-link listaFooter">Perguntas frequentes</router-link>
             </li>
             <li class="nav-item">
-              <router-link to= "/" class="nav-link listaFooter">Feedback</router-link>
-            </li>
-            <li class="nav-item">
               <router-link to= "/" class="nav-link listaFooter">Suporte</router-link>
             </li>
           </ul>
@@ -83,7 +80,7 @@ margin-right:0px;
   color: white;
 }
 .footer a:hover {
-  color: rgb(173, 93, 173);
+  color: #ad5dad;
 }
 .listainfo{
   display: flex;
