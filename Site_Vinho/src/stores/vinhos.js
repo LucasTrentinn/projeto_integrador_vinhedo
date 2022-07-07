@@ -11,14 +11,14 @@ export const useVinhosStore = defineStore({
   },
   actions: {
     async consultarTodos() {
-      const res = await api.get('/vinhos')
+      const res = await api.get('/wines')
       this.vinhos = res.data
     },
     async consultarVinho({}, id) {
-      return api.get(`/vinhos/${id}`)
+      return api.get(`/wines/${id}`)
     },
     async selecionarVinho(id) {
-      const res = await api.get(`/vinhos/${id}`)
+      const res = await api.get(`/wines/${id}`)
       this.vinho = res.data
       console.log(this.vinho)
     }

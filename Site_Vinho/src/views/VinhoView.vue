@@ -3,9 +3,9 @@
     <h5> ID </h5>
     <h1>{{ vinho.id }}</h1>
     <h5> nome </h5>
-    <h1>{{ vinho.nome }}</h1>
+    <h1>{{ vinho.name }}</h1>
     <h5> safra </h5>
-    <h1>{{ vinho.safra }}</h1>
+    <h1>{{ vinho.season }}</h1>
     <h5> {{$route.params.id}} </h5>
   </div>
 </template>

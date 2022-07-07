@@ -76,7 +76,7 @@
               alt="..."
             />
             <h3>
-              {{ slotProps.item.nome }}
+              {{ slotProps.item.name }}
             </h3>
           </div>
         </app-carousel>
@@ -97,7 +97,7 @@
               alt="..."
             />
             <h3>
-              {{ slotProps.item.nome }}
+              {{ slotProps.item.name }}
             </h3>
           </div>
         </app-carousel>

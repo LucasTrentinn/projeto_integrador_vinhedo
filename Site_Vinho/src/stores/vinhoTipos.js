@@ -12,7 +12,7 @@ export const useVinhoTiposStore = defineStore({
   },
   actions: {
     async consultarTodos() {
-      const res = await api.get('/vinhoTipos')
+      const res = await api.get('/wines')
       this.tipos = res.data
     }
   }
