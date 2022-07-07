@@ -4,7 +4,7 @@ const { User, WineMenu, Rating } = require('../models')
 const jwt = require('jsonwebtoken')
 const router = express.Router()
 const auth = require('../auth')
-const { Router } = require('express')
+
 
 router.get('/', async (req, res) => {
   res.send(await User.findAll({include: WineMenu, Rating}))
@@ -26,7 +26,7 @@ router.put('/:id', async (req, res) => {
 })
 
 router.delete('/:id', async (req, res) => {
-  (await User.findByPk(req.params.id)).destroy()
+  (await User.findByPk(req.params.id, {include: wineMenu, Rating})).destroy()
   res.status(200).send('OK')
 })
 

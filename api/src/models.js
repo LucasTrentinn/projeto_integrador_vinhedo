@@ -2,7 +2,7 @@ const { type } = require('os')
 const {Sequelize, DataTypes} = require('sequelize')
 require('dotenv').config()
 
-const sequelize = new Sequelize(process.env.DB_LINK, {dialect: 'postgres'})
+const sequelize = new Sequelize(process.env.DB_LINK, {dialect: 'postgres', dialectOptions: {ssl: {require: "true", rejectUnauthorized: false}}})
 
 const User = sequelize.define('User', {
   id: {
@@ -30,7 +30,7 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
-      is: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&.]{8,}$/
+      is: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&.]{8,20}$/
     }
   },
   name: {
