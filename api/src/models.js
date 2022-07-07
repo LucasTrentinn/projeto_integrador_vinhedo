@@ -96,6 +96,9 @@ const Wine = sequelize.define('Wine', {
   country: {
     type: DataTypes.STRING,
     allowNull: false
+  },  
+  picture: {
+    type: DataTypes.STRING
   }
 })
 
